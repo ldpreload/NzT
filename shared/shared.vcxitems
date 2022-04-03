@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <ItemsProjectGuid>{4e60807a-2c4c-483e-ab0d-7ce88f3783e1}</ItemsProjectGuid>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)config.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)crypto.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)error.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)globals.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)guid.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)list.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)log.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)registry.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)shared.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)socket.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)utils.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)config.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)crypto.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)globals.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)guid.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)list.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)log.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)registry.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)socket.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)utils.c" />
+  </ItemGroup>
+</Project>
